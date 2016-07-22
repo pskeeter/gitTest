@@ -1,0 +1,99 @@
+/*----------header-------------*/
+#header_big{width:100%;height:162px;position:relative;margin:0 auto;background:url(img/header-bg.jpg) repeat-x}
+#header_big .head_top{width:1000px;height:120px;margin:0 auto;position:relative;}
+#header_big .head_zc{width:1000px;height:30px;position:relative;}
+#header_big .zc_zhuc{height:30px;line-height:30px;float:left;}
+#header_big .zhuc_1{float:left;heiht:30px;font-size:14px;text-align:center;margin-right:21px;font-weight:bold;}
+#header_big .zhuc_2{margin-left:20px;font-weight:bold;}
+#header_big .head_logo{width:1000px;height:90px;}
+#header_big .head_logo a{margin-top:24px;display:inline-block;}
+
+/*----------nav-------------*/
+#head_nav{width:100%;height:42px;background-color:#000;}
+#head_nav .nav{width:1000px;height:42px;margin:0 auto;position:relative;}
+#head_nav .nav_content{width:800px;height:42px;float:left;position:relative;}
+#head_nav .nav_content .nav_font{display:block;float:left;height:42px;margin-right:50px;line-height:42px;color:#FFF;}
+	/*----------nav_二级列表-------------*/
+#head_nav .nav_content .pop_up{position:relative;z-index:100;}
+#head_nav .nav_content .pop_up_menu,#head_nav .nav_content .pop_up_menu1{display:none;width:630px;height:auto;overflow:hidden;position:absolute;top:42px;left:0;background:#fff;}
+#head_nav .nav_content .pop_up .pop_up_menu .submenu{width:274px;height:auto;overflow:hidden;float:left;padding:0 20px;position:relative;border-right:1px solid #e7e7e7;margin-top:10px;margin-bottom:10px;}
+#head_nav .nav_content .pop_up .pop_up_menu .submenu p{width:100%;height:44px;font-size:14px;font-weight:bold;text-align:left;line-height:44px;}
+.nav_content li{float:left;line-height:15px;}
+.submenu li{font-size:12px;margin-top:10px;}
+.more{float:left;}
+.more a{font-size:12px;color:#111;}
+#head_nav .nav_content li a:hover{color:#F00;cursor:pointer;}
+#head_nav .nav_content li a.active{color:#F00;}
+		/*----------shopping-------------*/
+#head_nav .shopping{width:150px;height:42px;float:right;background:#0F0;}
+#head_nav .shopping li{width:auto;height:42px;float:left;font-size:18px;line-height:42px;color:#FFF;margin-left:15px;}
+.shopping_bag {
+	height:42px;
+	color:#fff;
+	padding:0 15px 0 0;
+	position:absolute;
+	bottom:0;
+	right:0;
+	cursor:pointer;
+	z-index:10
+}
+.shopping_bag ul li {
+	float:left;
+	margin-left:15px;
+	font-size:14px;
+	height:42px;
+	line-height:42px
+}
+.shopping_bag ul .shopping_quantity {
+	margin-left:0;
+	color:#a8a8a8;
+	font-size:12px;
+	width:23px;
+	text-align:center;
+	line-height:45px;
+	background-repeat:no-repeat
+}
+.shopping_quantity{background:url(img/base_z.png) no-repeat;background-position: -1017px -219px;}
+.shopping_bag ul .shopping_quantity {
+	margin-left:0;
+	color:#a8a8a8;
+	font-size:12px;
+	width:23px;
+	text-align:center;
+	line-height:45px;
+	background-repeat:no-repeat
+}
+
+
+
+
+
+
+
+
+
+
+/*----------footer-------------*/
+#footer{width:100%;height:235px;position:relative;background:#f2f2f2;text-align: center;}
+#footer .footer-cont{width:1000px;height:205px;margin:0 auto;padding-top:30px;}
+#footer .cont-ad{width:1000px;height:60px;margin:0 auto;margin-bottom:20px;}
+
+#footer .cont-ad ul li{display:block;width:165px;height:60px;float:left;border-right:1px solid #777;font-size:12px;text-align:center;line-height:95px;position:relative}
+#footer .cont-ad .adli{border-right:none;}
+
+#footer ul li .a1,#footer ul li .a2,#footer ul li .a3,#footer ul li .a4,#footer ul li .a5,#footer ul li .a6{display:block;width:165px;height:60px;color:#000;background-position:50% 25%;background-repeat:no-repeat;}
+
+#footer .a1{background:url(img/footer-love.jpg)}
+#footer .a2{background:url(img/footer-car.jpg)}
+#footer .a3{background:url(img/footer-num.jpg)}
+#footer .a4{background:url(img/footer-pan.jpg)}
+#footer .a5{background:url(img/footer-clock.jpg)}
+#footer .a6{background:url(img/footer-num.jpg)}
+
+#footer .cont-about{margin-bottom:20px;width:1000px;height:16px;}
+#footer .cont-about a{margin:0 12px;cursor: pointer;color:#111;}
+#footer .cont-copyrig{margin-bottom:20px;width:1000px;height:16px;text-align:center;}
+#footer .cont-copyrig span{margin-right: 30px;}
+#footer .cont-licen{width:1000px;height:36px;}
+#footer .cont-licen span{margin-right: 20px;}
+#footer .cont-licen span a{cursor: pointer;}
