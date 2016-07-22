@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>魅力惠登录页面</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="../css/commont.css"/>
+<link rel="stylesheet" type="text/css" href="../css/loginin.css"/><link rel="stylesheet" type="text/css" href="../css/gouwuche.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
+<script src="../js/cookie.js"></script>
+<script>
+/*
+function fnLogin(){
+	var oUname = document.getElementById('userAccount');
+	var oUpass = document.getElementById('passWordtext');
+	var oUpasst = document.getElementById('passWordT');
+	var oError = document.getElementById('error_box');
+	var sUname = oUname.value.replace(/ /g, "");
+	var sUpass = oUpass.value;
+	oUname.value = sUname;
+	var regName = /^[a-zA-Z_][\w]{5,19}$/;
+	var regPass = /^[\w]{6,20}$/
+	if(!regName.test(sUname)){
+		oError.innerHTML = "开头不能为数字，只能包含字母、数字和下划线";
+	}else if(!regPass.test(sUpass)){
+		oError.innerHTML = "密码只能包含数组、字母和下划线";
+	}else{
+		oError.innerHTML = "";
+		window.location.href="../index.html";
+	}
+}
+*/
+</script>
+</head>
+
+<body>	
+	<div class="login_wrapper">
+    	<div class="login_container">
+			<div class="login_header" onclick="javascript:window.location.href = '/'"></div>
+			<div class="login_content">
+			<div class="login_main">
+            <div class="hydl_regsiter">
+                <h2>会员登陆</h2>
+                <span>没有帐号？<a href="login.html">免费注册</a></span>
+            </div>
+            <p id="error_box" style="color:red;float:left;padding-left:90px;font-size:12px;height:20px;line-height:20px;">请输入账户名</p>
+			<div class="hydl_loginbar">
+                <ul>
+                    <li>
+                        <span>账户名:</span><input style="width:253px;" name="userAccount" id="userAccount" type="text" placeholder="手机号/邮箱" >
+                    </li>
+                    
+                    <li>
+                        <span>密码:</span>
+                        <input style="width:253px;display:block;" name="passWordtext" id="passWordtext" type="text" placeholder="请输入6-20个字符" maxlength="20" >
+                        <p id = "Pwd_error"></p>
+                        <p id = "lowPwd"></p>
+                    </li>                
+                    <li id="rdm_img" class="showstyle"><span>验证码:</span>
+                        <input class="yanzheng" name="random" id="randomImg" onkeyup="value=value.replace(/[^\w/]/ig,'')" maxlength="6" type="text" onblur = "checkFormInfo('regist','no','','','random')" >
+                        <img id="rdm" src="../css/img/getRandom.png"  style=" border: 1px solid #999;cursor: pointer;">
+                        <p class = "Rdm_error" id="Rdm_error"></p>
+                    </li>
+                </ul>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="hydl_btn">
+            	<a id="regists" style="cursor: pointer;" >会员登录</a>
+            </div>
+            <div class="sjzc_login">
+                <p style="width:180px"><input type="radio" checked="checked" name="loginin" value="email" />下次自动登录<br/>
+                <input type="radio" checked="" name="loginin" value="unemail" />不自动登录
+                </p>
+                
+                <br/>
+                <a href="#" ><span style="display:block;float:right">忘记密码</span></a>
+            </div>
+            
+            <div class="hyd1_partner">
+            	<h4>联名登录</h4>
+            	<a class="weibo" href="#"></a>
+                <a class="zhifubao" href="#"></a>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="xian"></div>
+            <div class="erweima">
+                <img src="../css/img/imges_saomiao.jpg" />
+              <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+            </div>
+          
+         </div>  
+                    
+        </div>
+			<!--===========footer=============-->
+			<div id="footer">
+				<div class="footer-cont">
+					<div class="cont-ad">
+						<ul>
+							<li><a class="a1" href="#">100%品牌授权正品</a></li>
+							<li><a class="a2" href="#">满688免运费</a></li>
+							<li><a class="a3" href="#">7天无条件退货</a></li>
+							<li><a class="a4" href="#">超值折扣</a></li>
+							<li><a class="a5" href="#">9点限时闪购</a></li>
+							<li class="adli"><a class="a6" href="#">400－664－6698</a></li>
+						</ul>
+					</div>
+					<div class="cont-about">
+						<a href="#">关于魅力惠</a>
+						<a href="#">假如我们</a>
+						<a href="#">联系我们</a>
+						<a href="#">使用帮助</a>
+						<a href="#">使用规则</a>
+						<a href="#">隐私声明</a>
+						<a href="#">网站地图</a>
+					</div>
+					<div class="cont-copyrig">
+						<span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有 &nbsp;&nbsp;&nbsp;浙ICP备16004860号-1</span>
+					</div>
+					<div class="cont-licen">
+						<span><a href="#"><img src="../img/licen-1.png" /></a></span>
+						<span><a href="#"><img src="../img/licen-2.png" /></a></span>
+					</div>
+				</div>
+			</div>
+        </div>
+	</div>
+
+
+</body>
+</html>

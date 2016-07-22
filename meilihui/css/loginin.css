@@ -1,0 +1,42 @@
+
+body{background:#dddddb;color:#000;}
+ul,li,ol{list-style:none;}
+.login_wrapper{width:100%;height:auto;overflow:hidden;}
+.login_container{width:1000px;height:auto;overflow:hidden;margin:0 auto;background:url(../css/img/login-bg.png) no-repeat;}
+.login_header{background:url(../css/img/login-logo.png);width:369px;height:36px;margin:0 auto;margin-top:30px;cursor:pointer;}
+.login_content{width:950px;height:auto;overflow:hidden;}
+.login_content .login_main{float:right;width:350px;height:auto;overflow:hidden;margin:60px 150px 0 0;}
+.hydl_regsiter{margin-left:90px;width:260px;height:auto;overflow:hidden;padding-bottom:10px;}
+.hydl_regsiter h2{font-size:16px;font-weight:bold;float:left;}
+.hydl_regsiter span{float:right;margin-top:2px;}
+.hydl_regsiter span a{color:#F00;text-decoration:underline;}
+.newPeople{width:260px;padding-left:90px;height:auto;overflow:hidden;text-align:left;padding-bottom:10px;}
+.newPeople span{color:#F00;}
+.hydl_loginbar{width:100%;heiht:auto;overflow:hidden;}
+.hydl_loginbar ul li{height:auto;overflow:hidden;margin-bottom:10px;width:350px;text-align:left;}
+.hydl_loginbar span{float:left;width:75px;margin-right:15px;height:30px;line-height:30px;overflow:hidden;text-align:right;display:inline;}
+.hydl_loginbar input{width:253px;padding-left:5px;height:28px;border:1px solid #999;color:#999;line-height:28px;float:left;}
+.hydl_loginbar .yanzheng{width:108px;height:28px;}
+.hydl_loginbar img{float:right;}
+
+.hydl_btn{width:260px;height:35px;overflow:hidden;margin-left:90px;}
+.hydl_btn a{display:block;background:#F00;width:260px;height:35px;text-align:center;line-height:35px;color:#fff;}
+
+.sjzc_login{float:left;width:260px;padding-left:90px;height:auto;overflow:visible;}
+.sjzc_login p{float:left;margin:8px 0 0 0;display:inline;text-align:left;line-height:18px;width:260px;}
+
+.hyd1_partner{width:350px;height:auto;overflow:hidden;padding:20px 0 0 0;}
+.hyd1_partner h4{width:75px;float:left;text-align:right;margin-right:15px;}
+.weibo{width:20px;height:17px;overflow:hidden;background:url(../css/img/icon_weibo.png) no-repeat;float:left;margin:0 25px 0 0;cursor:pointer;display:inline;}
+.zhifubao{width:44px;height:17px;overflow:hidden;background:url(../css/img/icon_zhifubao.png) no-repeat;float:left;margin:0 25px 0 0;cursor:pointer;display:inline;}
+
+.chengepst{margin:3px 2px 0 0;float:left;}
+.not_selected{display:block;width:12px;height:12px;background:url(../css/img/icon_not_selected.png) no-repeat;cursor:pointer;}
+
+.erweima{margin:20px 0 0 20px;}
+.erweima img{float:left;}
+.erweima p{line-height:20px;margin:16px 18px 0 0;float:right;}
+
+.xian{background:#a8aaab;width:350px;height:1px;margin:19px 0 0 0;overflow:hidden;}
+
+#footer{margin-top:180px;}

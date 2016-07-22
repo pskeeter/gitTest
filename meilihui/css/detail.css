@@ -1,0 +1,505 @@
+
+
+
+/*----------内容区------------*/
+
+.content_container {
+	width: 1000px;
+	height: auto;
+	position: relative;
+	margin: 0 auto;
+	text-align: left;
+	z-index: 8;
+}
+
+
+/*活动剩余倒计时*/
+
+.countdown {
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.countdown_Time {
+	color: #999999;
+	float: right;
+}
+
+.countdown_label {
+	padding-left: 22px;
+	height: 17px;
+	background: url() no-repeat;
+	font-weight: bold;
+	float: right;
+	margin-right: 5px;
+}
+
+.breadcrumbs {
+	width: 1000px;
+	height: 16px;
+	padding: 17px 0 19px;
+	position: relative;
+	line-height: 16px;
+}
+
+
+/*商品路径*/
+
+.countdown {
+	height: 16px;
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.breadcrumbs ul li {
+	float: left;
+	margin: 8px;
+	color: #999999;
+}
+
+.breadcrumbs ul .product {
+	color: #000000;
+}
+
+.breadcrumbs ul li span {
+	margin: 8px;
+}
+
+
+/*商品核心，选择 轮播等*/
+
+.main {
+	width: 1000px;
+	height: auto;
+	margin-bottom: 30px;
+	position: relative;
+	float: left;
+}
+
+.product-main {
+	margin: 0 0 52px;
+	float: left;
+}
+
+.product_view {
+	width: 480px;
+	float: left;
+	margin: 0 0 0 5px;
+	height: auto;
+	overflow: hidden;
+}
+
+
+/*图片轮播*/
+
+#focus {
+	position: relative;
+	width: 480px;
+	height: 757px;
+	float: left;
+}
+
+#bigpic {
+	height: 640px;
+}
+
+#bigpic li {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#smallpic {
+	margin-top: 10px;
+}
+
+#smallpic li {
+	display: inline-block;
+}
+
+#smallpic img {
+	width: 80px;
+	height: 107px
+}
+
+.prev,
+.next {
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -40px;
+	padding: 10px;
+	background: rgba(0, 0, 0, .2);
+	font-size: 30px;
+	color: #ccc;
+	text-decoration: none;
+}
+
+.next {
+	left: auto;
+	right: 10px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, .8);
+}
+
+
+/*右侧*/
+
+.product_info {
+	width: 480px;
+	height: auto;
+	margin-right: 5px;
+	float: right;
+	position: relative;
+	overflow: visible
+}
+
+.product_title {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 32px;
+	padding: 4px 40px 0 0;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+.product_name {
+	width: auto;
+	padding-left: 2px;
+	padding-right: 30px;
+	height: auto;
+	overflow: hidden;
+	font-size: 16px;
+	color: #929292
+}
+
+.product_name h1 {
+	font-size: 16px;
+	font-weight: 400
+}
+
+.product_price_box {
+	position: relative;
+	padding: 22px 0 0;
+	line-height: 32px;
+	float:left;
+	width:480px;
+	
+}
+
+.product_price_box span {
+	float: left
+}
+
+.product_price {
+	width: auto;
+	float: left;
+	margin: 0 10px 0 0;
+	overflow: hidden;
+	white-space: nowrap
+}
+
+.product_price .product_current_price {
+	font-size: 28px;
+	font-weight: bold;
+	color: #dd2828
+}
+
+.product_discount {
+	float: right;
+	color: #000;
+	font-size: 24px;
+	font-weight: bold;
+	font-family: arial
+}
+
+.product_discount .unit {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	margin: 10px 0 0
+}
+
+.product_original_price {
+	width: auto;
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 18px;
+	text-decoration: line-through;
+	color: #999
+}
+
+.product_choose {
+	width: 360px;
+	height: auto;
+	position: relative;
+	margin: 0 0 8px;
+	float: left;
+}
+
+.product_choose_title {
+	width: 360px;
+	height: 31px;
+	font-size: 14px;
+	font-weight: 500;
+	color: #929292
+}
+
+.product_choose_title span {
+	font-size: 12px;
+	color: #db2726;
+	margin-left: 12px
+}
+
+.product_choose_title strong {
+	margin: 0 0 0 10px;
+	color: #000
+}
+
+.productsize {
+	display: block;
+	width: 43px;
+	height: 31px;
+	background: url(http://cdn11.mei.com/images/icon_size.gif) no-repeat;
+	position: absolute;
+	top: 0;
+	right: -170px;
+	text-indent: -9999px
+}
+
+/*.productsize_mz {
+	display: block;
+	width: 43px;
+	height: 31px;
+	background: url(http://cdn11.mei.com/images/icon_size.gif) no-repeat;
+	position: absolute;
+	top: 0;
+	right: -110px;
+	text-indent: -9999px
+}*/
+
+.product_choose_color li {
+	float: left;
+	width: 58px;
+	height: 94px;
+	margin: 0 10px 10px 0
+}
+
+.product_choose_color a {
+	display: block;
+	width: 58px;
+	height: 94px;
+	overflow: hidden;
+	position: relative
+}
+
+.shade1 {
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	left: -1px;
+	top: -1px;
+	z-index: 2
+}
+
+.product_choose_color img {
+	display: block;
+	width: 56px;
+	height: 75px;
+	border: 1px solid #eee
+}
+
+.product_choose_color span {
+	display: block;
+	line-height: 17px;
+	text-align: center;
+	color: #1e1e1e;
+	background: #eee
+}
+
+.product_choose_color a:hover span,
+.product_choose_color .colorselected span {
+	color: #fff;
+	background: #000
+}
+
+.product_choose_size {
+	z-index: 3
+}
+
+.product_choose_size li {
+	float: left;
+	width: auto;
+	min-width: 68px;
+	_width: 68px;
+	height: 34px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	overflow: visible
+}
+
+.product_choose_size a {
+	display: block;
+	width: 68px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: 500;
+	color: #000;
+	overflow: hidden;
+	background: #eee
+}
+
+.product_choose_size a:hover {
+	color: #fff;
+	background: #000
+}
+
+.product_choose_size .product_size_Checked {
+	background-color: #000;
+	color: #fff
+}
+
+.product_choose_size .product_size_Checked:visited {
+	color: #fff
+}
+
+.product_choose_size .product_size_none {
+	color: #ccc
+}
+
+.product_choose_size .product_size_maybe {
+	background: url(http://cdn11.mei.com/images/product_size_maybe.gif) no-repeat
+}
+
+.product_choose .number_choose {
+	width: 108px;
+	height: 34px;
+	border: 0
+}
+
+.product_choose .number_choose .quantity_number {
+	width: 40px;
+	height: 34px;
+	padding: 0
+}
+
+.product_choose .number_choose .quantity_number input {
+	width: 40px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	font-size: 14px;
+	font-weight: 700
+}
+
+.product_choose .number_choose .number_reduce_none,
+.product_choose .number_choose .number_reduce {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 24px;
+	border-right: 0;
+	background: #eee;
+	text-indent: 0;
+	cursor: pointer;
+}
+
+.product_choose .number_choose .number_increase_none,
+.product_choose .number_choose .number_increase {
+	width: 34px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	font-size: 24px;
+	border-left: 0;
+	background: #eee;
+	text-indent: 0;
+	cursor: pointer;
+	
+}
+
+.product_choose .number_choose .number_reduce_none,
+.product_choose .number_choose .number_increase_none {
+	color: #ccc
+}
+
+.quantity_explain {
+	position: absolute;
+	bottom: 8px;
+	left: 140px;
+	color: #db2726
+}
+
+.product_button {
+	width: 100%;
+	height: 42px;
+	overflow: hidden;
+	padding: 20px 0
+}
+
+.product_button .join_shopping_bag {
+	display: block;
+	width: 230px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 14px;
+	background-color: #de2827;
+	color: #fff;
+	float: left
+}
+
+.product_button .join_shopping_bag:visited {
+	color: #fff
+}
+
+
+/*商品详情*/
+.p_d_content{width:990px;margin:0 auto;padding:10px 0;line-height;20px;font-size:14px;font-size:14px;font-weight:500;}
+.p_d_tips{padding:14px 0;border-top:1px solid #a3a3a3;}
+.p_d_heading{text-align:center;margin:0 0 20px;}
+.p_d_heading strong{line-height:34px;font-weight:bold;font-size:32px;display:block;font-family: Helvetica,'Microsoft YaHei',Tahoma,Arial,sans-serif;}
+.p_d_heading span{line-height:28px;font-size:22px;font-weight:500;letter-spacing:4px;}
+.size_matters_top{float:left;width:1000px;height:auto;}
+.size_matters span{display:block;text-align:center;color:#a3a3a3;font-size:20px;}
+.size_matters a{display:block;text-align:right;text-decoration:underline;}
+
+.size_matters_table{float:left;margin:0 auto;}
+.product-design{float:left;padding-top:20px;}
+
+.p_d_content{width:990px;margin:0 auto;padding:10px 0;line-height:20px;font-size:14px;font-weight:500;color:#a3a3a3;float:left;}
+.p_keyvalue_list li{width:300px;height:31px;float:left;margin:0 9px 26px 0;border-bottom:1px solid #dadada;list-style-type:none;}
+.js{color:#666;}
+.p_d_content h3{font-size:18px;color:#333;}
+
+/*放大镜效果*/
+.large {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	/* 圆角 */
+	border-radius: 100%;
+	/* 这里使用多重阴影、来实现玻璃的效果 */
+	box-shadow: 0 0 0 7px rgba(255,255,255,0.8),0 0 7px 7px rgba(0,0,0,0.3),inset 0 0 40px 2px rgba(0,0,0,0.3); 
+	/* 加载放大镜的图片 */
+	background: url(iphone.jpg) no-repeat;
+	/* 放大镜默认隐藏 */
+	display: none;
+}
+/* 解决放大镜在放大的过程中边缘重叠的BUG */
+.small {
+	display: block;
+}

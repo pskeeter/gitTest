@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>魅力惠注册页面</title>
+<link rel="stylesheet" type="text/css" href="../css/commont.css"/>
+<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+<script type="text/javascript" src="../js/jquery-1.12.0.js"></script>
+<script src="../js/cookie.js"></script>
+<script>
+	$(function(){
+		var ok1=false;
+		var ok2=false;
+		var ok3=false;
+		var ok4=false;
+		// 验证用户名
+		$('input[name="username"]').focus(function(){
+			$(this).next().text('用户名应该为3-20位之间').removeClass('state1').addClass('state2');
+		}).blur(function(){
+			if($(this).val().length >= 3 && $(this).val().length <=12 && $(this).val()!=''){
+				$(this).next().text('输入成功').removeClass('state1').addClass('state4');
+				ok1=true;
+			}else{
+				$(this).next().text('用户名应该为3-20位之间').removeClass('state1').addClass('state3');
+			}
+			 
+		});
+
+		//验证密码
+		$('input[name="password"]').focus(function(){
+			$(this).next().text('密码应该为6-20位之间').removeClass('state1').addClass('state2');
+		}).blur(function(){
+			if($(this).val().length >= 6 && $(this).val().length <=20 && $(this).val()!=''){
+				$(this).next().text('输入成功').removeClass('state1').addClass('state4');
+				ok2=true;
+			}else{
+				$(this).next().text('密码应该为6-20位之间').removeClass('state1').addClass('state3');
+			}
+			 
+		});
+
+		//验证确认密码
+			$('input[name="repass"]').focus(function(){
+				$(this).next().text('输入的确认密码要和上面的密码一致,规则也要相同').removeClass('state1').addClass('state2');
+			}).blur(function(){
+				if($(this).val().length >= 6 && $(this).val().length <=20 && $(this).val()!='' && $(this).val() == $('input[name="password"]').val()){
+					$(this).next().text('输入成功').removeClass('state1').addClass('state4');
+					ok3=true;
+				}else{
+					$(this).next().text('输入的确认密码要和上面的密码一致,规则也要相同').removeClass('state1').addClass('state3');
+				}
+			 
+			});
+
+		//验证邮箱
+		$('input[name="email"]').focus(function(){
+			$(this).next().text('请输入正确的EMAIL格式').removeClass('state1').addClass('state2');
+		}).blur(function(){
+			if($(this).val().search(/\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/)==-1){
+				$(this).next().text('请输入正确的EMAIL格式').removeClass('state1').addClass('state3');
+			}else{                  
+				$(this).next().text('输入成功').removeClass('state1').addClass('state4');
+				ok4=true;
+			}
+			 
+		});
+		 
+	});
+</script>
+</head>
+
+<body>	
+	<div class="login_wrapper">
+    	<div class="login_container">
+        	<!--logo-->
+			<div class="login_header" onclick="javascript:window.location.href = '/'"></div>
+            <!--内容区-->
+			<div class="login_content">
+            <!--内容区 核心-->
+            <div class="login_main">
+                <div class="hydl_regsiter">
+                    <h2>免费注册</h2>
+                    <span>已注册？<a href="loginin.html">登录</a></span>
+                </div>
+                    <div class="newPeople"><p><span>新客专享 50元现金券＋2次免运</span><br/></p></div>
+                    <form action='do.php' method='post' class="form" >
+    					<span class="b1">账户名:</span><input type="text" name="username" id="userAccount">
+                			<span class='state1' style="color:red;">请输账户名</span><br/><br/>
+    					<span class="b1">密　　码:</span><input type="password" name="password" id="passWordtext">
+                			<span class='state1'>请输入密码</span><br/><br/>
+    					<span class="b1">确认密码:</span><input type="password" name="repass">
+               				 <span class='state1'>请输入确认密码</span><br/><br/>
+    					<span class="b1">邮　　箱:</span><input type="text" name="email">
+                			<span class='state1'>请输入邮箱</span><br/><br/>   
+					</form>
+                <div class="hydl_btn">
+                    <a id="regist" style="cursor: pointer;">立即注册</a>
+                </div>
+                <div class="sjzc_login">
+                    <p>点击立即注册即表示同意魅力惠
+                        <a href="#">
+                            <span>使用条款</span>
+                        </a>
+                        <p>
+                        	您是否需要收到魅力惠每日最新上线邮件<br/>
+                            <input type="radio" checked="checked" name="email" value="email" />是
+                            <input type="radio" checked="" name="email" value="unemail" />否
+                        </p>
+
+                    </p>
+                </div>
+                <div style="clear:both;"></div>
+                <div class="xian"></div>
+                <div class="erweima">
+                    <img src="../css/img/imges_saomiao.jpg" />
+                  <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+                </div>
+              
+             </div>  
+        </div>       
+
+			<!--===========footer=============-->
+			<div id="footer">
+				<div class="footer-cont">
+					<div class="cont-ad">
+						<ul>
+							<li><a class="a1" href="#">100%品牌授权正品</a></li>
+							<li><a class="a2" href="#">满688免运费</a></li>
+							<li><a class="a3" href="#">7天无条件退货</a></li>
+							<li><a class="a4" href="#">超值折扣</a></li>
+							<li><a class="a5" href="#">9点限时闪购</a></li>
+							<li class="adli"><a class="a6" href="#">400－664－6698</a></li>
+						</ul>
+					</div>
+					<div class="cont-about">
+						<a href="#">关于魅力惠</a>
+						<a href="#">假如我们</a>
+						<a href="#">联系我们</a>
+						<a href="#">使用帮助</a>
+						<a href="#">使用规则</a>
+						<a href="#">隐私声明</a>
+						<a href="#">网站地图</a>
+					</div>
+					<div class="cont-copyrig">
+						<span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有 &nbsp;&nbsp;&nbsp;浙ICP备16004860号-1</span>
+					</div>
+					<div class="cont-licen">
+						<span><a href="#"><img src="../img/licen-1.png" /></a></span>
+						<span><a href="#"><img src="../img/licen-2.png" /></a></span>
+					</div>
+				</div>
+			</div>
+        </div>
+	</div>
+
+</body>
+</html>
